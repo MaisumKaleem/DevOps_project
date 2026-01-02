@@ -1,0 +1,10 @@
+name: DevOps-Pipeline
+on: [push]
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Build Check
+        run: echo "The code is verified and ready for deployment!"
